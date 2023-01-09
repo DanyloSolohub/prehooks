@@ -1,0 +1,14 @@
+- id: task_id-in-branch-name
+  name: "use task id in branch name"
+  entry: task_id-in-branch-name
+  language: python
+  pass_filenames: false
+  always_run: true
+
+- id: add-msg-issue-prefix
+  name: "Add issue as commit message prefix"
+  description: Searches the branch name for something looking like a jira issue name and prepends the commit message with it
+  entry: add-msg-issue-prefix
+  language: python
+  always_run: true
+  stages: [prepare-commit-msg]
