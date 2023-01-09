@@ -34,7 +34,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     )
     args = parser.parse_args(argv)
 
-    excluded_branches = frozenset(args.exclude_branches or ('master', 'main'))
+    excluded_branches = frozenset(args.exclude_branches or ('master', 'main', 'staging', 'develop'))
     return check_branch_name(excluded_branches)
 
 
