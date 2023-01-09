@@ -21,8 +21,8 @@ def check_branch_name(
     branch_name = '/'.join(chunks[2:])
     if branch_name in excluded_branches or re.findall(regex, branch_name):
         return 0
-    print("Something went wrong with the branch name. The branch name should start with"
-          "Issue Id from Jira. Example: 'DS-69/short_description")
+    print('Something went wrong with the branch name. The branch name should start with'
+          'Issue Id from Jira. Example: "DS-69/short_description"')
     return 1
 
 
