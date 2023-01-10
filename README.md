@@ -35,7 +35,7 @@ Searches the branch name for something looking like a jira issue name and prepen
 
 ### Troubleshoot ###
 
-If you enabled `add-msg-issue-prefix` in your `.pre-commit-config.yaml` but you don't see it, try installing `prepare-commit-msg` hook type directly using:
+If you enabled `add-msg-issue-prefix` in your `.pre-commit-config.yaml` but you don't see it, try installing `prepare-commit-msg` hook type directly, using:
 `pre-commit install --hook-type prepare-commit-msg`
 
 
