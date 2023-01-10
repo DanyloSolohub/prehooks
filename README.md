@@ -8,7 +8,7 @@ Hooks for your bug & issue tracker.
 Add this to your `.pre-commit-config.yaml`:
 ```
   - repo: https://github.com/DanyloSolohub/prehooks
-    rev: 1.0.0
+    rev: 1.0.1
     hooks:
       - id: task_id-in-branch-name
       - id: add-msg-issue-prefix
